@@ -745,6 +745,19 @@ h1, h2, h3, h4 {
     
     .footer-content {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 2.5rem;
+        text-align: center;
+    }
+    
+    .footer-brand p {
+        margin: 1.5rem auto;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .footer-links ul {
+        align-items: center;
     }
 }
