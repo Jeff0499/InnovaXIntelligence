@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovaX Intelligence | Soluciones Tecnológicas Innovadoras</title>
+    <link rel="icon" type="image/png" href="assets/InnovaX_fondo_blanco.png">
+    <meta name="description"
+        content="InnovaX Intelligence es una empresa de desarrollo de software especializada en crear soluciones tecnológicas innovadoras para empresas y emprendedores.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navegación -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <!-- Como los logos son imágenes enviadas por el usuario, aquí usamos un texto/icono como fallback temporal 
+                     mientras el usuario coloca la ruta de sus logos en assets/logo.png -->
+                <span class="logo-text">Innova<span class="highlight">X</span> Intelligence</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto" class="btn-outline">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-text reveal">
+                <h1>Transformamos Ideas en <span class="highlight text-gradient">Soluciones Inteligentes</span></h1>
+                <p>Especialistas en desarrollo de software, apps móviles, automatización e inteligencia de negocios.
+                    Impulsa el crecimiento de tu empresa con tecnología escalable.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn-primary"
+                        onclick="openWhatsApp('Quiero iniciar la transformación digital de mi empresa')">
+                        Inicia tu Transformación Digital <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#servicios" class="btn-secondary">
+                        Explorar Servicios
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Scroll</p>
+        </div>
+    </section>
+
+    <!-- Nosotros Section -->
+    <section id="nosotros" class="about">
+        <div class="container about-container">
+            <div class="about-image reveal-left">
+                <div class="img-wrapper">
+                    <img src="assets/about_tech.png" alt="Equipo de InnovaX Intelligence">
+                    <div class="floating-badge">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Eficiencia & Escalabilidad</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text reveal-right">
+                <h2 class="section-title">Sobre <span class="highlight">Nosotros</span></h2>
+                <p><strong>InnovaX Intelligence</strong> es una empresa de desarrollo de software especializada en crear
+                    soluciones tecnológicas innovadoras para empresas y emprendedores.</p>
+                <p>Diseñamos aplicaciones web y móviles, automatizamos procesos, desarrollamos plataformas digitales y
+                    brindamos consultoría tecnológica enfocada en eficiencia, escalabilidad y transformación digital.
+                </p>
+                <p>Nuestro objetivo es claro: <em>convertir ideas en soluciones inteligentes que impulsen el crecimiento
+                        de nuestros clientes.</em></p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="100">0</h3><span>%</span>
+                        <p>Innovación</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="24">0</h3><span>/7</span>
+                        <p>Soporte</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Nuestros <span class="highlight">Servicios</span></h2>
+                <p>Soluciones integrales de vanguardia para llevar tu negocio al siguiente nivel.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Servicio 1 -->
+                <div class="service-card reveal tilt-card" onclick="openWhatsApp('Necesito una Consultoría de Desarrollo')">
+                    <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Consultoría de Desarrollo</h3>
+                    <p>Te guiamos en la mejor estrategia tecnológica para optimizar tus recursos y garantizar el éxito de tu proyecto.</p>
+                    <button class="btn-service">Saber más</button>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="service-card reveal tilt-card" style="transition-delay: 100ms;" onclick="openWhatsApp('Me interesa la Creación de Apps Móviles')">
+                    <div class="card-icon"><i class="fab fa-app-store-ios"></i></div>
+                    <h3>Creación de Apps Funcionales</h3>
+                    <p>Desarrollo de aplicaciones móviles a medida publicadas en Google Play Store y Apple AppStore.</p>
+                    <button class="btn-service">Saber más</button>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="service-card reveal tilt-card" style="transition-delay: 200ms;" onclick="openWhatsApp('Requiero una Página Web a detalle')">
+                    <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Páginas Web a Detalle</h3>
+                    <p>Diseño y desarrollo de sitios web modernos, rápidos, responsivos y enfocados en conversión.</p>
+                    <button class="btn-service">Saber más</button>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="service-card reveal tilt-card" onclick="openWhatsApp('Necesito Desarrollo de APIs y Servicios Web')">
+                    <div class="card-icon"><i class="fas fa-server"></i></div>
+                    <h3>Servicios Web y APIs</h3>
+                    <p>Creación de arquitecturas robustas y APIs completas para conectar y potenciar tus sistemas.</p>
+                    <button class="btn-service">Saber más</button>
+                </div>
+
+                <!-- Servicio 5 -->
+                <div class="service-card reveal tilt-card" style="transition-delay: 100ms;" onclick="openWhatsApp('Me interesa Big Data e Inteligencia de Negocios')">
+                    <div class="card-icon"><i class="fas fa-database"></i></div>
+                    <h3>Big Data & Business Intelligence</h3>
+                    <p>Análisis, desarrollo de ETL's e inteligencia de negocios para tomar decisiones basadas en datos.</p>
+                    <button class="btn-service">Saber más</button>
+                </div>
+
+                <!-- Servicio 6 -->
+                <div class="service-card reveal tilt-card" style="transition-delay: 200ms;" onclick="openWhatsApp('Busco Sistematización con Factura Digital')">
+                    <div class="card-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <h3>Sistematización & Factura Digital</h3>
+                    <p>Automatización de procesos en tu entidad o negocio con integración de facturación electrónica.</p>
+                    <button class="btn-service">Saber más</button>
+                </div>
+
+                <!-- Servicio 7 -->
+                <div class="service-card reveal tilt-card" onclick="openWhatsApp('Requiero Infraestructura en AWS/Azure')">
+                    <div class="card-icon"><i class="fab fa-aws"></i></div>
+                    <h3>Infraestructura Cloud</h3>
+                    <p>Diseño y creación de arquitectura de desarrollo escalable y segura en AWS o Microsoft Azure.</p>
+                    <button class="btn-service">Saber más</button>
+                </div>
+
+                <!-- Servicio 8 -->
+                <div class="service-card reveal tilt-card" style="transition-delay: 100ms;" onclick="openWhatsApp('Necesito Instalación de Office Verificado')">
+                    <div class="card-icon"><i class="fab fa-microsoft"></i></div>
+                    <h3>Instalación de Office Verificado</h3>
+                    <p>Proveemos e instalamos paquetería de software ofimático original y verificado para tu empresa.</p>
+                    <button class="btn-service">Saber más</button>
+                </div>
+
+                <!-- Servicio 9 -->
+                <div class="service-card reveal tilt-card" style="transition-delay: 200ms;" onclick="openWhatsApp('Solicito Mantenimiento de Software de PCs')">
+                    <div class="card-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Mantenimiento de Software</h3>
+                    <p>Soporte técnico, optimización y mantenimiento de software para PCs empresariales.</p>
+                    <button class="btn-service">Saber más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contacto -->
+    <footer id="contacto" class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-text">Innova<span class="highlight">X</span> Intelligence</span>
+                </a>
+                <p>Soluciones que transforman. Tecnología que impulsa el crecimiento de tu negocio.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/innovaxintelligence/" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#" onclick="openWhatsApp('Hola, quisiera conectar con InnovaX Intelligence')"
+                        aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:innovaxintelligence@gmail.com" aria-label="Email"><i
+                            class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fab fa-whatsapp"></i> +57 3046697754</li>
+                    <li><i class="fas fa-envelope"></i> innovaxintelligence@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Colombia</li>
+                </ul>
+            </div>
+
+            <div class="footer-cta">
+                <h3>¿Listo para innovar?</h3>
+                <p>Contáctanos directamente vía WhatsApp para una respuesta rápida.</p>
+                <button class="btn-primary btn-small"
+                    onclick="openWhatsApp('Hola InnovaX, me gustaría tener una reunión para discutir un proyecto')">Hablar
+                    ahora</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 InnovaX Intelligence. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-floating" onclick="openWhatsApp('Hola, quisiera solicitar información sobre sus servicios.')">
+        <div class="wa-tooltip">¡Escríbenos!</div>
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
